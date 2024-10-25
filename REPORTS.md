@@ -10,5 +10,3 @@ A Class Diagram is a type of structural diagram used in the Unified Modelling La
 
 ![Class Diagram](/images/maxresdefault.jpg)
 
-
-
