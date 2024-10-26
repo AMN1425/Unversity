@@ -37,3 +37,100 @@ Classes: Represent the basic objects of the system that contain properties and m
 
 
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##__Class Accountant__
+
+```c++
+class Accountant {
+    +accountantID: String
+    +name: String
+    +email: String
+    +generateInvoice(studentID: String, amount: double)
+    +updatePaymentStatus(studentID: String ,status: String)
+    +viewFees(studentID: String): list<fee>
+}
+```
