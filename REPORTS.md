@@ -18,4 +18,22 @@ Classes: Represent the basic objects of the system that contain properties and m
 - __`Methods`__: These are the functions that a class can implement.
 - __`Relationships`__: Represent how classes are related to each other.
 
+
+
+
+
+
+
+-__adminID__: Unique identifier for theadmin (String).
+- __name__: Name of the admin (String).
+- __email__: Email address of the admin (String).
+
+
+            
+لعلتل
+عهع
+
+
+
+
 ---
