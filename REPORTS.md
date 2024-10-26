@@ -10,3 +10,12 @@ A Class Diagram is a type of structural diagram used in the Unified Modelling La
 
 ![Class Diagram](/images/maxresdefault.jpg)
 
+## Class Diagram Components
+
+Classes: Represent the basic objects of the system that contain properties and methods:
+
+- __`Attributes`__: These are the values or variables that an object holds.
+- __`Methods`__: These are the functions that a class can implement.
+- __`Relationships`__: Represent how classes are related to each other.
+
+---
