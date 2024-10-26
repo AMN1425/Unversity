@@ -18,3 +18,30 @@ University_System/  # Root directory.
 
 
 [![Visual Studio Code](./images/vscode.png)](https://code.visualstudio.com/)
+
+## Installing Git
+
+[![Git](/images/git3.png)](https://code.visualstudio.com/)
+
+## Upload Project in GitHub
+
+[![GitHub](/images/githubL.jpg)](https://)
+
+## Installing Draw.io
+
+[![Draw.io](/images/Drawio.jpg)](https://)
+
+## Command TeamLeader Project
+
+```yml
+git status
+git add .
+git commit -m "New Commit."
+git push origin main
+```
+
+## Command Git Clone Project
+
+```yml
+git clone https://github.com/username/Unvercity_Systems.git
+```
