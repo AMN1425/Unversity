@@ -77,7 +77,7 @@ Classes: Represent the basic objects of the system that contain properties and m
 
 
 
-## 8. Fee Class
+ Fee Class
 
 ### Attributes
 
