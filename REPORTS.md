@@ -208,6 +208,60 @@ class Student {
     +payFees(amount: Double)
 }
 ```
+## Class Admin
+
+```c++
+class Admin {
+    +adminID: String
+    +name: String
+    +email: String
+    +addStudent(student: Student)
+    +updateStudentInfo(studentID: String)
+    +addCourse(course: Course)
+    +updateCourseInfo(courseID: String)
+    +addDepartment(department: Department)
+    +updateDepartmentInfo(departmentID: String)
+    +assignHeadOfDepartment(departmentID: String, professorID: String)
+}
+```
+
+## __Class Course__
+
+```c++
+class Course {
+    +courseID: String
+    +title: String
+    +description: String
+    +credits: int
+    +schedule: String
+    +location: String
+    +availability: int
+    +addGrade(studentID: String, grade: Grade)
+    +updateGrade(studentID: String, grade: Grade)
+}
+```
+
+## __Class Grade__
+
+```c++
+class Grade {
+    studentID: String
+    courseID: String
+    grade: String
+}
+```
+
+## __Class LibrarySystem__
+
+```c++
+class LibrarySystem {
+    +addBook(book: Book)
+    +updateBookInfo(bookID: String)
+    +borrowBook(studentID: String, bookID: String)
+    +returnBook(studentID: String, bookID: String)
+    +viewAllBooks(): List<Book>
+}
+```
 
 
 
