@@ -113,6 +113,44 @@ Imagine that we have a university system to manage the library, students, depart
 
 
 
+- __Borrows__:
+  - The `Student` borrows books from the `LibrarySystem`.
+- __Enrolled in__:
+  - The `Student` enrolls in courses offered by the `Department`.
+ 
+
+
+
+
+
+
+- __departmentID__: Unique identifier for the department (String).
+- __name__: Name of the department (String).
+- __head__: Head of the department (String).
+
+
+
+- `addCourse(course: Course)`: Adds a new course to the department.
+- `updateCourseinfo(courseID:String)`: Updates the information of an existing course.
+
+
+
+- __Manages__:
+  - The `Department` manages:
+    - `Course`
+    - Offers courses that students can enroll in.
+  
+ 
+
+
+
+
+
+
+
+
+
+
 
  
 
