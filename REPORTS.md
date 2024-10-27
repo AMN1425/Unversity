@@ -26,6 +26,57 @@ Imagine that we have a university system to manage the library, students, depart
 
 ---
 
+- [UML CLASS DIAGRAM](#uml-class-diagram)
+  - [Introduction](#introduction)
+  - [Class Diagram Components](#class-diagram-components)
+  - [Scenario](#scenario)
+  - [1. Admin Class](#1-admin-class)
+    - [Attributes](#attributes)
+    - [Operations](#operations)
+    - [Relationships](#relationships)
+  - [2. Student Class](#2-student-class)
+    - [Attributes](#attributes-1)
+    - [Operations](#operations-1)
+    - [relationships](#relationships-1)
+  - [3. Department Class](#3-department-class)
+    - [Attributes](#attributes-2)
+    - [Operations](#operations-2)
+    - [Relationships](#relationships-2)
+  - [4. Course Class](#4-course-class)
+    - [Attributes](#attributes-3)
+    - [Operations](#operations-3)
+    - [Relationships](#relationships-3)
+  - [5. LibrarySystem Class](#5-librarysystem-class)
+    - [Operations](#operations-4)
+    - [Relationships](#relationships-4)
+  - [6. Book Class](#6-book-class)
+    - [Attributes](#attributes-4)
+    - [Relationships](#relationships-5)
+  - [7. FeeSystem Class](#7-feesystem-class)
+    - [Operations](#operations-5)
+    - [Relationships](#relationships-6)
+  - [8. Fee Class](#8-fee-class)
+    - [Attributes](#attributes-5)
+    - [Relationships](#relationships-7)
+  - [9. Accountant Class](#9-accountant-class)
+    - [Attributes](#attributes-6)
+    - [Operations](#operations-6)
+    - [Relationships](#relationships-8)
+  - [Plain Text Diagrams Classes](#plain-text-diagrams-classes)
+  - [Class Admin](#class-admin)
+  - [__Class Course__](#class-course)
+  - [__Class Grade__](#class-grade)
+  - [__Class LibrarySystem__](#class-librarysystem)
+  - [__Class Book__](#class-book)
+  - [__Class Department__](#class-department)
+  - [__Class FeeSystem__](#class-feesystem)
+  - [__Class Accountant__](#class-accountant)
+  - [All Classes Plain Text](#all-classes-plain-text)
+  - [Conclusion](#conclusion)
+  - [__Contribute__](#contribute)
+
+![Class Diagram](images/classDiagram.png)
+
 -__adminID__: Unique identifier for theadmin (String).
 - __name__: Name of the admin (String).
 - __email__: Email address of the admin (String).
@@ -40,8 +91,6 @@ Imagine that we have a university system to manage the library, students, depart
 - `updateDepartmentInfo(departmentID:String)`:Updates the setails of an existing department.
 - `assignHeadOfDepartment(departmentID:String, professorID: String)`: Assigns a professor as the head of a specific department.
 
-
-
 - __Manages__:
   - The `Admin` manages:
     - `Student`
@@ -49,17 +98,12 @@ Imagine that we have a university system to manage the library, students, depart
     - `Department`
    
 ---
-
- 
-
-
-            
+         
 - __studentID__: Unique identifier for the student(String).
 - __name__: Name of the student(String).
 - __email__: Email address of the student(string).
 - __phone__: Contact number of the student(String).
 - __address__: Address of the student(String).
-
 
 
 - `updateInfo()`: Allows the student to update their personal information.
