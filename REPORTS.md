@@ -18,11 +18,13 @@ Classes: Represent the basic objects of the system that contain properties and m
 - __`Methods`__: These are the functions that a class can implement.
 - __`Relationships`__: Represent how classes are related to each other.
 
+---
 
+## Scenario
 
+Imagine that we have a university system to manage the library, students, departments, courses, and fees. The role of the Class Diagram is to show all the classes involved in this system and how they interact with each other. This diagram can be used by developers to understand the relationships between the different components of the system before they start coding.
 
-
-
+---
 
 -__adminID__: Unique identifier for theadmin (String).
 - __name__: Name of the admin (String).
