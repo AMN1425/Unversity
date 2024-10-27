@@ -188,3 +188,18 @@ class Accountant {
     +viewFees(studentID: String): list<fee>
 }
 ```
+## All Classes Plain Text
+
+```yml
+@startuml
+class Student {
+    studentID: String
+    name: String
+    email: String
+    phone: String
+    address: String
+    updateInfo()
+    registerCourse(courseID: String)
+    viewGrades(): List<Grade>
+    payFees(amount: Double)
+}
