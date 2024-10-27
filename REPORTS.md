@@ -203,3 +203,15 @@ class Student {
     viewGrades(): List<Grade>
     payFees(amount: Double)
 }
+class Admin {
+    adminID: String
+    name: String
+    email: String
+    addStudent(student: Student)
+    updateStudentInfo(studentID: String)
+    addcourse(course: Course)
+    updateCourseInfo(courseID: String)
+    addDepartment(department: Department)
+    updateDepartmentInfo(departmentID: String)
+    assignHeadOfDepartment(departmentID: String, professorID: String)
+}
