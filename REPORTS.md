@@ -28,15 +28,47 @@ Classes: Represent the basic objects of the system that contain properties and m
 - __name__: Name of the admin (String).
 - __email__: Email address of the admin (String).
 
+### operations
+
+- `addStudent(student:Student)`: Adds a new student to the system.
+- `updateStudentInfo(studentID:String)`: Updates the information of a student based on their studentID.
+- `addCourse(course:Course)`: Adds a new course to the system.
+- `updateCourseInfo(courseID:String)`: Updates the information of a specific course.
+- `addDepartment(department:Department)`: Adds a new department to the system.
+- `updateDepartmentInfo(departmentID:String)`:Updates the setails of an existing department.
+- `assignHeadOfDepartment(departmentID:String, professorID: String)`: Assigns a professor as the head of a specific department.
+
+
+
+- __Manages__:
+  - The `Admin` manages:
+    - `Student`
+    - `Course`
+    - `Department`
+   
+---
+
+ 
+
 
             
-لعلتل
-عهع
+- __studentID__: Unique identifier for the student(String).
+- __name__: Name of the student(String).
+- __email__: Email address of the student(string).
+- __phone__: Contact number of the student(String).
+- __address__: Address of the student(String).
+
+
+
+- `updateInfo()`: Allows the student to update their personal information.
+- `registerCourse(courseID: String)`: Enables the student to enroll in a specific course.
+- `viewGrades(): List<Grade>`: Provides the student with a list of their grades.
+- `payFees(amount:Double)`: Allows the student to pay their fees.
 
 
 
 
----
+ 
 
 
 
