@@ -45,3 +45,29 @@ git push origin main
 ```yml
 git clone https://github.com/username/Unvercity_Systems.git
 ```
+## Command Teams Groups Project 
+
+```yml
+
+git status
+git add .
+git commit -m "New Commit."
+git push origin main
+```
+
+## Command Git Update File Project
+
+```yml
+git pull origin main
+```
+
+
+## References
+
+- [Git](https://git-scm.com/downloads/win)
+- [GitHub](http://github.com/)
+- [VS Code](https://code.visualstudio.com/)
+- [Draw.io](https://app.diagrams.net/)
+- [Markdown](http://wikipedia.org/wiki/Markdown)
+
+  __[View Documents ] (REPORTS.md)__
