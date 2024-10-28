@@ -410,3 +410,22 @@ class LibrarySystem {
     returnBook(studentID: String, bookID: String)
     viewAllBooks(): List<Book>
 }
+
+class Book {
+    bookID: String
+    title: String
+    author: String
+    status: String
+    borrowedBy: String
+}
+
+class Department {
+    departmentID: String
+    name: String
+    head: String
+    addCourse(course: Course)
+    updateCourseInfo(courseID: String)
+}
+
+
+
