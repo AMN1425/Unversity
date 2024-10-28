@@ -440,6 +440,13 @@ class Fee{
     status: String
 }
 
+class Accountant {
+    accountantID: String
+    name: String
+    email: String
+    generateInvoice(studentID: String, amount: Double)
+    updatePaymentStatus(studentID: String, status: String)
+    viewFees(studentID: String): List<Fee>
 
 
 
