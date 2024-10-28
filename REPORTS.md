@@ -163,6 +163,23 @@ Imagine that we have a university system to manage the library, students, depart
 
 - __Offers__:
   - The `Course` is offered by the `Department` and students can enroll in it.
+ 
+
+
+
+
+
+
+- `addBook(book: Book)`: Adds a new book to the library.
+- `updateBookInfo(bookID: String)`: Updates information about a specific book.
+- `borrowBook(studentID: String, bookID: String)`: Allows a student to borrow a book.
+- `returnBook(studentID: Strung, bookID: String)`: Allows a student to return a borrowed book.
+- `viewAllBooks(): List<Book>`: Displays a list of all available books in the library.
+
+
+
+- __Manages__:
+  - The `LibrarySystem` manages the `Book` entity, which students can borrow or return.
    
 
 
