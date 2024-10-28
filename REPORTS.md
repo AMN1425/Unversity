@@ -381,6 +381,39 @@ class LibrarySystem {
     +viewAllBooks(): List<Book>
 }
 ```
+## __Class Book__
+
+```c++
+class Book {
+    +bookID: String
+    +title: String
+    +author: String
+    +status: String
+    +borrowedBy: String
+}
+```
+
+## __Class Department__
+
+```c++
+class Department {
+    +departmentID: String
+    +name: String
+    +head: String
+    +addCourse(course: Course)
+    +updateCourseInfo(courseID: String)
+}
+```
+
+## __Class FeeSystem__
+
+```c++
+class FeeSystem {
+    +generateInvoice(studentID: String, amount: Double)
+    +updatePaymentStatus(studentID: String, status: String)
+    +viewFees(studentID: String): List<Fee>
+}
+```
 
 
 
