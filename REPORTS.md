@@ -139,6 +139,38 @@ Imagine that we have a university system to manage the library, students, depart
   - The `Department` manages:
     - `Course`
     - Offers courses that students can enroll in.
+   
+
+
+
+
+
+
+- __courseID__: Unique identifier for the course (String).
+- __title__: Title of course (String).
+- __description__: Brief description of the course (String).
+- __credits__: Number of credits awarded upon completion (int).
+- __schedule__: Timing and schedule information of the course (String).
+- __location__: Location where the course is conducted (String).
+- __availability__: Number of available sport in the course (int).
+
+
+
+- `addGrade(studentID: String, grade: Grade)`: Adds a grade for a student enrolled in the course.
+- `updateGrade(studentID: String, grade: Grade)`: Updates the grade of a student in the course.
+
+
+
+- __Offers__:
+  - The `Course` is offered by the `Department` and students can enroll in it.
+   
+
+
+
+
+
+
+
   
  
 
