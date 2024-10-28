@@ -427,5 +427,20 @@ class Department {
     updateCourseInfo(courseID: String)
 }
 
+class FeeSystem{
+    generateInvoice(studentID:String,amount:Double)
+    updatePaymentStatus(studentID:String,status:String)
+    viewFees(studentID:String):List<Fee>
+}
+class Fee{
+    feeID:String
+    student:String
+    amount:Double
+    dueData: Data
+    status: String
+}
+
+
+
 
 
