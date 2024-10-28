@@ -180,6 +180,38 @@ Imagine that we have a university system to manage the library, students, depart
 
 - __Manages__:
   - The `LibrarySystem` manages the `Book` entity, which students can borrow or return.
+ 
+
+
+
+
+
+
+- __bookID__: Unique identifier for the book (String).
+- __title__: Title of the book (Strung).
+- __author__: Author of the book (String).
+- __status__: Availability status of the book (String).
+- __borrowedBy__: The student who has currently borrowed the book (String).
+
+
+
+- __Borrowed by__
+  - The `Book` can be borrowed by students through the `LibrarySystem`.
+ 
+
+
+
+
+
+
+- `generatelnvoice(studentID: String, amount: Double)`: Generates an invoice for a student based on the fee amount.
+- `updatePaymentStatus(studentID: String, status: String)`: Updates the payment status of a student's fees.
+- `viewFees(studentID: String): List<fee>`: Displays the list of fees for a student.
+
+
+
+- __Generates__:
+  - The `FeeSystem` generates `Fee` details for the student.
    
 
 
