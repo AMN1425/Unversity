@@ -561,7 +561,46 @@ class Accountant {
     generateInvoice(studentID: String, amount: Double)
     updatePaymentStatus(studentID: String, status: String)
     viewFees(studentID: String): List<Fee>
+}
 
+Student "1" -- "N"                Grade
+Student "1" -- "N"                Course : enrolls
+Student "1" -- "N"                Book : borrows
+Admin "1" -- "N"                  Student : manages
+Admin "1" -- "N"                  Course : manages
+Admin "1" -- "N"                  Department : manages
+Admin "1" -- "N"                  Fee : manages
+LibrarySystem "1" -- "N"          Book : manages
+Department "1" -- "N"             Course : offers
+FeeSystem "1" -- "N"              Fee : generates
+Accountant "1" -- "N"             Fee : manages
+@enduml
+
+```
+
+## Conclusion
+
+The ClassDiagram gives us a holistic view of the `University System` in terms of the main objects that the system interacts with. `Students`, `fees`, `books` and `courses` are managed by different classes such as `Admin`, `Accountant`, `LibrarySystem` and others. The diagram also shows how all these objects interact with each other through clear and tidy relationships that help developers build the system correctly
+
+
+## __Contribute__
+
+<div style="display:flex; align-item:center;justify-content: center; gap:15px; margin-bottom: 50px;">
+
+<div style="display:flex; flex-direction: column;">
+<img src="images/vscode.png" alt="TeamMember" style="border-radius:50%;   width: 100px; height: 100px; object-fit: cover;">  <b style= "text-align: center;">Name</b>
+</div>
+<div style="display:flex; flex-direction: column;">
+<img src="images/vscode.png" alt="TeamMember" style="border-radius:50%;   width: 100px; height: 100px; object-fit: cover;">  <b style= "text-align: center;">Name</b>
+</div>
+<div style="display:flex; flex-direction: column;">
+<img src="images/vscode.png" alt="TeamMember" style="border-radius:50%;   width: 100px; height: 100px; object-fit: cover;"><b style= "text-align: center;">Name</b>
+</div>
+<div style="display:flex; flex-direction: column;">
+<img src="images/vscode.png" alt="TeamMember" style="border-radius:50%;   width: 100px; height: 100px; object-fit: cover;"><b style= "text-align: center;">Name</b>
+</div>
+
+</div>
 
 
 
