@@ -410,7 +410,7 @@ class FeeSystem {
 
 
 
-##__Class Accountant__
+## __Class Accountant__
 
 ```c++
 class Accountant {
@@ -535,22 +535,12 @@ The ClassDiagram gives us a holistic view of the `University System` in terms of
 
 ## __Contribute__
 
-<div style="display:flex; align-item:center;justify-content: center; gap:15px; margin-bottom: 50px;">
-
-<div style="display:flex; flex-direction: column;">
-<img src="images/vscode.png" alt="TeamMember" style="border-radius:50%;   width: 100px; height: 100px; object-fit: cover;">  <b style= "text-align: center;">Name</b>
-</div>
-<div style="display:flex; flex-direction: column;">
-<img src="images/vscode.png" alt="TeamMember" style="border-radius:50%;   width: 100px; height: 100px; object-fit: cover;">  <b style= "text-align: center;">Name</b>
-</div>
-<div style="display:flex; flex-direction: column;">
-<img src="images/vscode.png" alt="TeamMember" style="border-radius:50%;   width: 100px; height: 100px; object-fit: cover;"><b style= "text-align: center;">Name</b>
-</div>
-<div style="display:flex; flex-direction: column;">
-<img src="images/vscode.png" alt="TeamMember" style="border-radius:50%;   width: 100px; height: 100px; object-fit: cover;"><b style= "text-align: center;">Name</b>
-</div>
-
-</div>
-
+| Name                  |   Label  |
+| :----------------     | :------: |
+| Ayman ALYazidi        |  Leader  |
+| Khalid AlQahtani      |  Member  |
+| Abdulaziz Al-Zahrani  |  Member  |
+| Sultan Al-Zahrani     |  Member  |
+| Naif Al-Zahrani       |  Member  |
 
 
