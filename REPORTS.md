@@ -77,6 +77,10 @@ Imagine that we have a university system to manage the library, students, depart
 
 ![Class Diagram](images/classDiagram.png)
 
+## 1. Admin Class
+
+### Attributes
+
 -__adminID__: Unique identifier for theadmin (String).
 - __name__: Name of the admin (String).
 - __email__: Email address of the admin (String).
@@ -91,60 +95,67 @@ Imagine that we have a university system to manage the library, students, depart
 - `updateDepartmentInfo(departmentID:String)`:Updates the setails of an existing department.
 - `assignHeadOfDepartment(departmentID:String, professorID: String)`: Assigns a professor as the head of a specific department.
 
+### Relationships
+
 - __Manages__:
   - The `Admin` manages:
     - `Student`
     - `Course`
     - `Department`
-   
+ 
 ---
-         
+
+## 2. Student Class
+
+### Attributes
+
 - __studentID__: Unique identifier for the student(String).
 - __name__: Name of the student(String).
 - __email__: Email address of the student(string).
 - __phone__: Contact number of the student(String).
 - __address__: Address of the student(String).
 
+### Operations
 
 - `updateInfo()`: Allows the student to update their personal information.
 - `registerCourse(courseID: String)`: Enables the student to enroll in a specific course.
 - `viewGrades(): List<Grade>`: Provides the student with a list of their grades.
 - `payFees(amount:Double)`: Allows the student to pay their fees.
 
-
+### relationships
 
 - __Borrows__:
   - The `Student` borrows books from the `LibrarySystem`.
 - __Enrolled in__:
   - The `Student` enrolls in courses offered by the `Department`.
+
+---
  
+## 3. Department Class
 
-
-
-
-
+### Attributes
 
 - __departmentID__: Unique identifier for the department (String).
 - __name__: Name of the department (String).
 - __head__: Head of the department (String).
 
-
+### Operations
 
 - `addCourse(course: Course)`: Adds a new course to the department.
 - `updateCourseinfo(courseID:String)`: Updates the information of an existing course.
 
-
+### Relationships
 
 - __Manages__:
   - The `Department` manages:
     - `Course`
     - Offers courses that students can enroll in.
-   
 
+---
 
+## 4. Course Class
 
-
-
+### Attributes
 
 - __courseID__: Unique identifier for the course (String).
 - __title__: Title of course (String).
@@ -154,21 +165,21 @@ Imagine that we have a university system to manage the library, students, depart
 - __location__: Location where the course is conducted (String).
 - __availability__: Number of available sport in the course (int).
 
-
+### Operations
 
 - `addGrade(studentID: String, grade: Grade)`: Adds a grade for a student enrolled in the course.
 - `updateGrade(studentID: String, grade: Grade)`: Updates the grade of a student in the course.
 
-
+### Relationships
 
 - __Offers__:
   - The `Course` is offered by the `Department` and students can enroll in it.
- 
 
+---
 
+## 5. LibrarySystem Class
 
-
-
+### Operations
 
 - `addBook(book: Book)`: Adds a new book to the library.
 - `updateBookInfo(bookID: String)`: Updates information about a specific book.
@@ -176,16 +187,16 @@ Imagine that we have a university system to manage the library, students, depart
 - `returnBook(studentID: Strung, bookID: String)`: Allows a student to return a borrowed book.
 - `viewAllBooks(): List<Book>`: Displays a list of all available books in the library.
 
-
+### Relationships
 
 - __Manages__:
   - The `LibrarySystem` manages the `Book` entity, which students can borrow or return.
- 
 
+---
 
+## 6. Book Class
 
-
-
+### Attributes
 
 - __bookID__: Unique identifier for the book (String).
 - __title__: Title of the book (Strung).
@@ -193,88 +204,27 @@ Imagine that we have a university system to manage the library, students, depart
 - __status__: Availability status of the book (String).
 - __borrowedBy__: The student who has currently borrowed the book (String).
 
-
+### Relationships
 
 - __Borrowed by__
   - The `Book` can be borrowed by students through the `LibrarySystem`.
- 
 
+---
 
+## 7. FeeSystem Class
 
-
-
+### Operations
 
 - `generatelnvoice(studentID: String, amount: Double)`: Generates an invoice for a student based on the fee amount.
 - `updatePaymentStatus(studentID: String, status: String)`: Updates the payment status of a student's fees.
 - `viewFees(studentID: String): List<fee>`: Displays the list of fees for a student.
 
-
+### Relationships
 
 - __Generates__:
   - The `FeeSystem` generates `Fee` details for the student.
-   
 
-
-
-
-
-
-
-  
- 
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- Fee Class
+## 8. Fee Class
 
 ### Attributes
 
