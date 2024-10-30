@@ -45,7 +45,7 @@ git push origin main
 ```yml
 git clone https://github.com/username/Unversity.git
 ```
-## Command Teams Groups Project 
+## Command Teams Groups Project
 
 ```yml
 
