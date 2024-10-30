@@ -1,4 +1,3 @@
-
 # UML CLASS DIAGRAM
 
 ---
@@ -386,30 +385,6 @@ class FeeSystem {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## __Class Accountant__
 
 ```c++
@@ -542,5 +517,3 @@ The ClassDiagram gives us a holistic view of the `University System` in terms of
 | Abdulaziz Al-Zahrani  |  Member  |
 | Sultan Al-Zahrani     |  Member  |
 | Naif Al-Zahrani       |  Member  |
-
-
